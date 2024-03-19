@@ -47,20 +47,12 @@ body{
   align-items: center;
 }
 .boxes{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin-top: 100px;
 }
-.boxesFirstRow{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.boxesSecondRow{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+
 .box{
   width: 200px;
   height: 200px;
